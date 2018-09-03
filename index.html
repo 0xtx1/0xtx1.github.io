@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet'>
+	<meta charset="utf-8">
+	<title>{@0xtx1}</title>
+	<link href="demo.css" rel="stylesheet" media="all">
+	<style>
+		.section-wrapper {
+			margin-top: -50px;
+			padding-top: 50px;
+		}
+
+		.section-wrapper:first-child .section {
+			padding-top: 100px;
+		}
+
+		#nav {
+			background: #ffffff;
+			left: 0;
+			list-style: none;
+			overflow: hidden;
+			padding-top: 9px;
+			position: fixed;
+			right: 0;
+			text-align: center;
+			top: 0;
+		}
+		#nav li {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+		#nav a {
+			background: #000;
+			color: ;
+			display: block;
+			padding: 10px;
+		}
+		#nav a:hover {
+			background: none;
+			color: #000;
+		}
+		#nav .current a {
+			background: #000000;
+			color: #ffffff;
+		}
+	</style>
+</head>
+
+<body>
+
+	<ul id="nav">
+		<li class="current"><a href="#section-1">Olá, Mundo !</a></li>
+	</ul>
+
+	<div id="container">
+		<div class="section-wrapper" id="section-1">
+			<div class="section">
+				<h1>olá, Mundo !</h1>
+				<p>Um blog sobre segurança da informação e hacking, onde postarei artigos, tutorias e futuras notícias de grupos voltados a tecnologia.
+				Eu sou Thiago Vinicius, Entusiasta de information security, Researcher pelo #DataGroup e Desenvolvedor,Tenho foco aumentar a comunidade de "hacking" na cidade de Recife.</p>
+			<a href="https://twitter.com/0xtx1"><img border="0" src="https://i0.wp.com/www.careerboostco.org/wp-content/uploads/2017/07/twitterlogo.png?ssl=1" width="40" height="40" /></a>
+			<a href="https://github.com/EsponnjaHk/"><img border="0" src="https://git-scm.com/images/logos/downloads/Git-Icon-White.png" width="40" height="40" /></a>
+			<a href="https://instagram.com/thiagotwx/"><img border="0" src="https://clipart.info/images/ccovers/1522452763logo-instagram-png-white.png" width="40" height="40" /></a>
+			</div>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+	<script src="jquery.nav.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav();
+		});
+	</script>
+</body>
+</html>
